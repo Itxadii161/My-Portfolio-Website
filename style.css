@@ -1,0 +1,84 @@
+@import url();
+
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: ;
+    scroll-behavior: smooth;
+
+}
+a{
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+p{
+    font-size: 1.4rem;
+    color: black;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+}
+.section-title{
+    font-size: 1rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+.section-title span{
+    color: crimson;
+}
+.cta{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
+    transition: 0.3s ease background-color,color;
+    color: black;
+}
+.cta:hover{
+    color: white;
+    background-color: crimson;
+}
+.brand h1{
+    font-family: 3rem;
+    text-transform: uppercase;
+    /* color: white; */
+
+}
+.brand h1 span{
+    color: crimson;
+}
+#header{
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    width: 100vw;
+    height: auto;
+}
+#header .header{
+    min-height: 0vh;
+    background-color: rgba(red, green, blue);
+}
