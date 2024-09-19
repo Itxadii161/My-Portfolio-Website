@@ -1,13 +1,13 @@
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 html{
     font-size: 10px;
-    font-family: ;
+    font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
 
 }
@@ -35,7 +35,7 @@ p{
     letter-spacing: 0.05rem;
 }
 .section-title{
-    font-size: 1rem;
+    font-size: 4rem;
     font-weight: 300;
     color: black;
     margin-bottom: 10px;
@@ -46,7 +46,7 @@ p{
 .section-title span{
     color: crimson;
 }
-.cta{
+.cta {
     display: inline-block;
     padding: 10px 30px;
     background-color: transparent;
@@ -55,7 +55,7 @@ p{
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     margin-top: 30px;
-    transition: 0.3s ease background-color,color;
+    transition: 0.3s ease background-color, color;
     color: black;
 }
 .cta:hover{
@@ -63,12 +63,13 @@ p{
     background-color: crimson;
 }
 .brand h1{
-    font-family: 3rem;
+    font-size: 3rem;
     text-transform: uppercase;
     /* color: white; */
+    color: black;
 
 }
-.brand h1 span{
+.brand h1 span {
     color: crimson;
 }
 #header{
@@ -78,12 +79,12 @@ p{
     width: 100vw;
     height: auto;
 }
-#header .header{
+#header .header {
     min-height: 0vh;
     background-color: rgba(31, 30, 30, 0.24);
     transition: 0.3s ease background-color;
 }
-#header .nav-bar{
+#header .nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,7 +108,7 @@ p{
     cursor: pointer;
     transform: scale(0.8);
 }
-#header .hamburger:after{
+#header .hamburger:after {
     content:"" ;
     border: 3px solid white;
     height: 100%;
@@ -125,7 +126,7 @@ p{
         transform: scale(1.4);
     }
 }
-#header .hamburger .bar{
+#header .hamburger .bar {
     background-color: white;
     height: 2px;
     width: 30px;
@@ -140,7 +141,7 @@ p{
     width: 100%;
     position: absolute;
     left: 0;
-    transition: 0.3s ease top, bottom ;
+    transition: 0.3s ease top, bottom;
 }
 #header .hamburger .bar::after{
     top: 8px;
@@ -154,9 +155,9 @@ p{
 #header .hamburger.active .bar::after {
     top: 0;
 }
-#header .navlist ul{
+#header .nav-list ul{
     list-style-type: none;
-    background-color: rgb(31, 30, 30,);
+    background-color: rgb(31, 30, 30);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,10 +171,10 @@ p{
     transition: 0.3s ease left ;
 }
 
-#header .navlist ul.active{
+#header .nav-list ul.active{
     left: 0;
 }
-#header .navlist ul li{
+#header .nav-list ul a {
     font-size: 2.5rem;
     font-weight: 500;
     letter-spacing: 0.2rem;
@@ -183,7 +184,7 @@ p{
     display: block;
     padding: 20px;
 }
-#header .navlist ul a::after {
+#header .nav-list ul a::after {
     content: attr(data-after);
     position: absolute;
     top: 50%;
@@ -195,7 +196,10 @@ p{
     z-index: -1;
     transition: 0.3s ease letter-spacing;
 }
-#header .navlist ul li:hover a::after{
+#header .nav-list ul li:hover a::after{
     transform: translate(-50%, -50%) scale(1);
     letter-spacing: initial;
+}
+#header .nav-list ul li:hover a {
+    color: crimson;
 }
