@@ -423,8 +423,78 @@ p{
 #projects .project-item:hover .project-img img {
     transform: scale(1.1);
 }
-/* for 760px */
 
+/* about */
+#about .about {
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+#about .col-left {
+    width: 250px;
+    height: 360px;
+}
+#about .col-right {
+    width: 100%;
+}
+#about .col-right h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    margin-bottom: 10px;
+}
+#about .col-right p {
+    margin-bottom: 20px;
+}
+#about .col-right .cta {
+    color: black;
+    margin: 50px;
+    padding: 10px 20px;
+    font-size: 2rem;
+}
+#about .col-left .about-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 10px solid white;
+}
+#about .col-left .about-img::after{
+    content: "";
+    position: absolute;
+    border: 7px solid crimson;
+    top: 19px;
+    left: -33px;
+    height: 98%;
+    width: 98%;
+    z-index: -1;
+}
+
+/* contact */
+#contact .contact {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 98%;
+}
+#contact .contact-items {
+    width: 100%;
+}
+#contact .contact-item {
+    width: 80%;
+    /* padding: 20px; */
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* for 760px */
 @media only screen and (min-width: 768px) {
     .cta {
         font-size: 2.5rem;
@@ -458,7 +528,30 @@ p{
     #projects .all-projects .project-info {
         height: 100%;
     }
-}
+
+    #about .about {
+        flex-direction: row;
+    }
+    #about .col-left {
+        width: 600px;
+        height: 500px;
+        padding-left: 60px;
+    }
+    #about .about .col-left .about-img::after {
+        left: -45px;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        border: 10px solid crimson;
+    }
+    #about .col-right {
+        padding: 30px;
+        text-align: left;
+    }
+    #about .col-right h1 {
+        text-align: left;
+    }
+    
 
 
 /* for 1200px */
@@ -486,6 +579,4 @@ p{
         flex-basis: 22%;
         margin: 1.5%;
     }
-    
 }
-
